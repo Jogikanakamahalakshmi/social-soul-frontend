@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'https://plum-weak-bluefish.cyclic.app' });
-// const API = axios.create({ baseURL: 'http://localhost:5000' || 'https://timeline-pro.herokuapp.com' });
+const API = axios.create({ baseURL: 'https://social-soul-backend.onrender.com' });
+// const API = axios.create({ baseURL: 'http://localhost:5000' || 'https://social-soul-backend.onrender.com' });
 
 // without interceptors middleware will not work
 API.interceptors.request.use((req) => {
