@@ -61,7 +61,6 @@ const Navbar = () => {
           <Toolbar className={classes.toolbar}>
             {user ? (
               <div className={classes.profile} id='avatar'>
-                <Avatar color="purple" alt={user.result.name} src={user.result.picture}>{user.result.name}</Avatar>
                 <Typography className={classes.userName} varient="h6">{user.result.name}</Typography>
                 <Button variant="outlined" component={Link} to="/form" color="primary" style={{ marginRight: "5px" }}>Upload</Button>
                 <Button variant="contained" className={classes.logout} color="red" onClick={handleLogout}>Logout</Button>
