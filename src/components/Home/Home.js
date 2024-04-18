@@ -144,9 +144,9 @@ const Home = () => {
                                         onKeyPress={handleKeyPress}
                                         onChange={(e) => setSearch(e.target.value)} />
                                 </AppBar>
-                                <MuiChipsInput
+                                <TextField
                                     
-                                    style={{ margin: '10px 0px' }}
+                                    style={{ margin: '5px' }}
                                     value={tags}
                                     // onAdd={handleAdd}
                                     // onDelete={handleDelete}
@@ -154,7 +154,7 @@ const Home = () => {
                                     label='Search Tags'
                                     variant='outlined'
                                 />
-                                <Button variant='contained' onClick={searchPost} className={classes.searchButton} color='primary' sx={{ margin: '5px' }}>Search</Button>
+                                <Button variant='contained' onClick={searchPost} className={classes.searchButton} color='primary' sx={{ margin: '5px' }} style={{ marginLeft: '70px' }}>Search</Button>
                             </Paper>
                         </Grid>
                     </Grid>
